@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="Arial" font-size="13" width="810" height="565">
+	<desc>UML diagram model</desc>
+	<g id="_OvSQ5PWqEeWolbMxsR5EUQ">
+		<defs>
+			<linearGradient id="greyGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#EEEEEE" stop-opacity="1" />
+				
+			</linearGradient>
+			<linearGradient id="packageGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#EFE9DE" stop-opacity="0.4" />
+				
+			</linearGradient>
+			<linearGradient id="executionSpecificationGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#EFE9DE" stop-opacity="1" />
+				
+			</linearGradient>
+			
+		</defs>
+		<g id="_aBJ6gNfZEDOEarsY06E6AQ" transform="translate(50 245)">
+			<rect fill-opacity="0.5" x="0" y="0" width="710" height="200" rx="0" ry="0" fill="#fff" stroke="#ADADAD" stroke-width="1" />
+			<g id="_aBLIoNfZEDOEarsY06E6AQ" transform="translate(0 0)" />
+			<text x="8" y="16" font-style="normal" font-weight="bold" fill="#000">break </text>
+			<path fill-opacity="0.0" d="M0 23L54 23L64 13L64 0" fill="#fff" stroke-width="1" stroke="#888888" />
+			
+		</g>
+		<g id="_UW7YENfYEDOEarsY06E6AQ">
+			<polyline stroke-dasharray="10, 5" fill="none" stroke-width="1" stroke="#A29E9E" points="105,36  105,475 " />
+			<rect x="60" y="15" width="90" height="36" rx="2" ry="2" fill="url(#greyGradient)" stroke="#BBBBBB" stroke-width="1" />
+			<image x="80" y="26" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEX///9woMRAgLDi8P84e7Dp9P86fLDw9/88fbD3+/89frD+/v8/f7AAUpEAS4XA0+HHhLc3AAAAAXRSTlMAQObYZgAAAAFiS0dEDxi6ANkAAAAHdElNRQffCQcJATn2tNxUAAAAQElEQVQI12NgYFQCAQYGBiZjIDABMUKBIAzEKAeCChBjJhDMAjF2A8EeIAOo6xJYFxA8YICCDzDGAwwGMVIgAADwcBTlv8WhiQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wOS0wN1QwOTowMTo1NyswMjowMF1TVBAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDktMDdUMDk6MDE6NTcrMDI6MDAsDuysAAAAAElFTkSuQmCC" />
+			<text x="115" y="38" text-anchor="middle" font-style="normal" font-weight="bold" fill="#033656">:NAO</text>
+			
+		</g>
+		<g id="_Vtka4NfYEDOEarsY06E6AQ">
+			<polyline stroke-dasharray="10, 5" fill="none" stroke-width="1" stroke="#A29E9E" points="389,36  389,475 " />
+			<rect x="310" y="15" width="158" height="36" rx="2" ry="2" fill="url(#greyGradient)" stroke="#BBBBBB" stroke-width="1" />
+			<image x="327" y="26" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEX///9woMRAgLDi8P84e7Dp9P86fLDw9/88fbD3+/89frD+/v8/f7AAUpEAS4XA0+HHhLc3AAAAAXRSTlMAQObYZgAAAAFiS0dEDxi6ANkAAAAHdElNRQffCQcJATn2tNxUAAAAQElEQVQI12NgYFQCAQYGBiZjIDABMUKBIAzEKAeCChBjJhDMAjF2A8EeIAOo6xJYFxA8YICCDzDGAwwGMVIgAADwcBTlv8WhiQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wOS0wN1QwOTowMTo1NyswMjowMF1TVBAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDktMDdUMDk6MDE6NTcrMDI6MDAsDuysAAAAAElFTkSuQmCC" />
+			<text x="399" y="38" text-anchor="middle" font-style="normal" font-weight="bold" fill="#033656">:Reconnaissance</text>
+			
+		</g>
+		<g id="_Z8CmcNfYEDOEarsY06E6AQ">
+			<polyline stroke-dasharray="10, 5" fill="none" stroke-width="1" stroke="#A29E9E" points="685,226  685,515 " />
+			<rect x="640" y="205" width="90" height="36" rx="2" ry="2" fill="url(#greyGradient)" stroke="#BBBBBB" stroke-width="1" />
+			<image x="670" y="216" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEX///9woMRAgLDi8P84e7Dp9P86fLDw9/88fbD3+/89frD+/v8/f7AAUpEAS4XA0+HHhLc3AAAAAXRSTlMAQObYZgAAAAFiS0dEDxi6ANkAAAAHdElNRQffCQcJATn2tNxUAAAAQElEQVQI12NgYFQCAQYGBiZjIDABMUKBIAzEKAeCChBjJhDMAjF2A8EeIAOo6xJYFxA8YICCDzDGAwwGMVIgAADwcBTlv8WhiQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wOS0wN1QwOTowMTo1NyswMjowMF1TVBAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDktMDdUMDk6MDE6NTcrMDI6MDAsDuysAAAAAElFTkSuQmCC" />
+			<text x="695" y="228" text-anchor="middle" font-style="normal" font-weight="bold" fill="#033656">IA</text>
+			
+		</g>
+		<g id="_bVlzUNfYEDOEarsY06E6AQ">
+			<rect x="97" y="165" width="16" height="50" rx="2" ry="2" fill="url(#executionSpecificationGradient)" stroke="#c2b79f" stroke-width="1" />
+			
+		</g>
+		<g id="_cBZJYNfYEDOEarsY06E6AQ">
+			<rect x="97" y="325" width="16" height="80" rx="2" ry="2" fill="url(#executionSpecificationGradient)" stroke="#c2b79f" stroke-width="1" />
+			
+		</g>
+		<g id="_cjmekNfYEDOEarsY06E6AQ">
+			<rect x="381" y="205" width="16" height="50" rx="2" ry="2" fill="url(#executionSpecificationGradient)" stroke="#c2b79f" stroke-width="1" />
+			
+		</g>
+		<g id="_hUrA4NfYEDOEarsY06E6AQ">
+			<rect x="381" y="325" width="16" height="50" rx="2" ry="2" fill="url(#executionSpecificationGradient)" stroke="#c2b79f" stroke-width="1" />
+			
+		</g>
+		<g id="_iF_JENfYEDOEarsY06E6AQ">
+			<rect x="677" y="325" width="16" height="80" rx="2" ry="2" fill="url(#executionSpecificationGradient)" stroke="#c2b79f" stroke-width="1" />
+			
+		</g>
+		<g id="_zAzrcNfYEDOEarsY06E6AQ">
+			<polyline stroke-dasharray="1, 2" fill="none" stroke-width="1" stroke="#000000" points="397,205 640,205" />
+			<g id="_zAzrcNfYEDOEarsY06E6AQ">
+				<text x="519" y="198" font-style="normal" fill="black">créer</text>
+				
+			</g>
+			<g transform="translate(640,205)">
+				<g transform="rotate(90)">
+					<polyline fill="none" stroke-width="1" stroke="#000000" points="-5,10 0,0 5,10" />
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_-6w8ANfYEDOEarsY06E6AQ">
+			<polyline fill="none" stroke-width="1" stroke="#000000" points="397,325 677,325" />
+			<g id="_-6w8ANfYEDOEarsY06E6AQ">
+				<text x="537" y="318" font-style="normal" fill="black">traiter coordonnée</text>
+				
+			</g>
+			<g transform="translate(677,325)">
+				<g transform="rotate(90)">
+					<polyline fill="#000000" stroke-width="1" stroke="#000000" points="-4,12 0,0 4,12 -4,12" />
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_ERWmMNfZEDOEarsY06E6AQ">
+			<polyline fill="none" stroke-width="1" stroke="#000000" points="113,325 381,325" />
+			<g id="_ERWmMNfZEDOEarsY06E6AQ">
+				<text x="247" y="318" font-style="normal" fill="black">traiter image</text>
+				
+			</g>
+			<g transform="translate(381,325)">
+				<g transform="rotate(90)">
+					<polyline fill="#000000" stroke-width="1" stroke="#000000" points="-4,12 0,0 4,12 -4,12" />
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_HSqbENfZEDOEarsY06E6AQ">
+			<polyline fill="none" stroke-width="1" stroke="#000000" points="113,205 381,205" />
+			<g id="_HSqbENfZEDOEarsY06E6AQ">
+				<text x="247" y="198" font-style="normal" fill="black">traiter image</text>
+				
+			</g>
+			<g transform="translate(381,205)">
+				<g transform="rotate(90)">
+					<polyline fill="#000000" stroke-width="1" stroke="#000000" points="-4,12 0,0 4,12 -4,12" />
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_PXZGgdfZEDOEarsY06E6AQ">
+			<polyline stroke-dasharray="1, 2" fill="none" stroke-width="1" stroke="#000000" points="677,405 113,405" />
+			<g id="_PXZGgdfZEDOEarsY06E6AQ">
+				<text x="395" y="398" font-style="normal" fill="black">action</text>
+				
+			</g>
+			<g transform="translate(113,405)">
+				<g transform="rotate(-90)">
+					<polyline fill="none" stroke-width="1" stroke="#000000" points="-5,10 0,0 5,10" />
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		
+	</g>
+	
+</svg>

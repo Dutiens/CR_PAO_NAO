@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="104cm" height="42cm" viewBox="-411 -43 2071 824" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-409.106" y="-41.5064" width="479.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-409.106" y="-41.5064" width="479.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-169.256" y="-22.5064">NAO</text>
+    <rect style="fill: #ffffff" x="-409.106" y="-13.5064" width="479.7" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-409.106" y="-13.5064" width="479.7" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-406.106" y="0.4936">-ip: IP</text>
+    <rect style="fill: #ffffff" x="-409.106" y="6.4936" width="479.7" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-409.106" y="6.4936" width="479.7" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-406.106" y="20.4936">+__init__(ip:IP)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-406.106" y="36.4936">+appliquerPositionInitiale(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-406.106" y="52.4936">+actionnerBras(direction:Coordonnee,duree:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-406.106" y="68.4936">+capturerImage(resolution:Dimension,enCouleur:boolean): Image</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-406.106" y="84.4936">+parler(message:String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="797.334" y="34.9096" width="356.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="797.334" y="34.9096" width="356.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="975.584" y="53.9096">Balle</text>
+    <rect style="fill: #ffffff" x="797.334" y="62.9096" width="356.5" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="797.334" y="62.9096" width="356.5" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="800.334" y="76.9096">-rayon: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="800.334" y="92.9096">-coordonee: Coordonne.</text>
+    <rect style="fill: #ffffff" x="797.334" y="98.9096" width="356.5" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="797.334" y="98.9096" width="356.5" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="800.334" y="112.91">+__init__(coordonnee:Coordonnee,rayon:double)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="800.334" y="128.91">+getRayon(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="800.334" y="144.91">+setRayon(rayon:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="800.334" y="160.91">+getCoordonnee(): Coordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="800.334" y="176.91">+setCoordonnee(coordonnee:Coordonnee): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="862.476" y="325.136" width="225.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="862.476" y="325.136" width="225.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="975.276" y="344.136">Coordonnee</text>
+    <rect style="fill: #ffffff" x="862.476" y="353.136" width="225.6" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="862.476" y="353.136" width="225.6" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="865.476" y="367.136">-x: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="865.476" y="383.136">-y: double</text>
+    <rect style="fill: #ffffff" x="862.476" y="389.136" width="225.6" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="862.476" y="389.136" width="225.6" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="865.476" y="403.136">+__init__(x:double,y:double)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="865.476" y="419.136">+getX(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="865.476" y="435.136">+getY(): double</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975.584,209.09 975.584,261.527 975.276,261.527 975.276,325.136 "/>
+    <polygon style="fill: #000000" points="975.584,183.919 980.384,197.919 975.584,211.919 970.784,197.919 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975.584,183.919 980.384,197.919 975.584,211.919 970.784,197.919 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="975.43" y="258.527"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.584" y="195.919"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="979.276" y="321.136">1</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-73.7766" y="157.31" width="672.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-73.7766" y="157.31" width="672.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="262.323" y="176.31">IA</text>
+    <rect style="fill: #ffffff" x="-73.7766" y="185.31" width="672.2" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-73.7766" y="185.31" width="672.2" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="199.31">-ancienneCoordonnee: Coordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="215.31">-balle: Balle</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="231.31">-barreJ1: Barre</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="247.31">-barreJ2: Barre</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="263.31">-terrain: Terrain</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="279.31">-vitesseBarre: double</text>
+    <rect style="fill: #ffffff" x="-73.7766" y="285.31" width="672.2" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-73.7766" y="285.31" width="672.2" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="299.31">+__init__(barreJ1:Barre,barreJ2:Barre,balle:Balle,terrain:Terrain)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="315.31">+traiter(barreJ1:Barre,barreJ2:Barre,balle:Balle): Action</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="331.31">+setVitesseBarre(vitesse:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="347.31">-_estimerDirectionBalle(balle:Balle): Coordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-70.7766" y="363.31">-_estimerNouvellePositionBarre(balle:Balle,vecteurDirectionnel:Coordonnee): Coordonnee</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="203.106" y="-34.5338" width="271.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="203.106" y="-34.5338" width="271.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="339.006" y="-15.5338">IP</text>
+    <rect style="fill: #ffffff" x="203.106" y="-6.5338" width="271.8" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="203.106" y="-6.5338" width="271.8" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.106" y="7.4662">-adresse: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.106" y="23.4662">-port: int</text>
+    <rect style="fill: #ffffff" x="203.106" y="29.4662" width="271.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="203.106" y="29.4662" width="271.8" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.106" y="43.4662">+__init__(adresse:String,port:int)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.106" y="59.4662">+getAdresse(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.106" y="75.4662">+getPort(): int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1202.6" y="309.342" width="456.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1202.6" y="309.342" width="456.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1430.9" y="328.342">Reconnaissance</text>
+    <rect style="fill: #ffffff" x="1202.6" y="337.342" width="456.6" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1202.6" y="337.342" width="456.6" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1205.6" y="351.342">-coinSupGauche: Coordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1205.6" y="367.342">-coinSupDroit: Coordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1205.6" y="383.342">-coinInfGauche: Coordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1205.6" y="399.342">-coinInfDroit: Coordonnee</text>
+    <rect style="fill: #ffffff" x="1202.6" y="405.342" width="456.6" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1202.6" y="405.342" width="456.6" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1205.6" y="419.342">+__init__()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1205.6" y="435.342">+detecterTerrain(image:Image): Image, Dimension</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1205.6" y="451.342">+detecterElements(imageTerrain:Image): Barre, Barre, Balle</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="769.956" y="584.038" width="441.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="769.956" y="584.038" width="441.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="990.556" y="603.038">Barre</text>
+    <rect style="fill: #ffffff" x="769.956" y="612.038" width="441.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="769.956" y="612.038" width="441.2" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="626.038">-coordonnee: Cordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="642.038">-hauteur: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="658.038">-largeur: int</text>
+    <rect style="fill: #ffffff" x="769.956" y="664.038" width="441.2" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="769.956" y="664.038" width="441.2" height="116"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="678.038">+__init__(coordonnee:Coordonnee,hauteur:int,largeur:int)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="694.038">+setCoordonnee(coordonnee:Coordonee): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="710.038">+getCoordonnee(): Coordonnee</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="726.038">+setHauteur(hauteur:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="742.038">+getHauteur(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="758.038">+setLargeur(largeur:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="772.956" y="774.038">+getLargeur(): int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="253.662" y="591.812" width="271.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="253.662" y="591.812" width="271.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="389.562" y="610.812">Terrain</text>
+    <rect style="fill: #ffffff" x="253.662" y="619.812" width="271.8" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="253.662" y="619.812" width="271.8" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="256.662" y="633.812">-hauteur: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="256.662" y="649.812">-largeur: int</text>
+    <rect style="fill: #ffffff" x="253.662" y="655.812" width="271.8" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="253.662" y="655.812" width="271.8" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="256.662" y="669.812">+__init__(hauteur:int,largeur:int)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="256.662" y="685.812">+getHauteur(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="256.662" y="701.812">+setHauteur(hauteur:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="256.662" y="717.812">+getLargeur(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="256.662" y="733.812">+setLargeur(largeur:int): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-169.152" y="445.988" width="302.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-169.152" y="445.988" width="302.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-17.8522" y="464.988">Action</text>
+    <rect style="fill: #ffffff" x="-169.152" y="473.988" width="302.6" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-169.152" y="473.988" width="302.6" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-166.152" y="487.988">-temps: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-166.152" y="503.988">-direction: Direction</text>
+    <rect style="fill: #ffffff" x="-169.152" y="509.988" width="302.6" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-169.152" y="509.988" width="302.6" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-166.152" y="523.988">+__init__(temps:double,direction:Enum)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-166.152" y="539.988">+getTemps(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-166.152" y="555.988">+getDirection(): Direction</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-119.506" y="658.64" width="202.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-119.506" y="658.64" width="202.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-18.4306" y="677.64">&lt;&lt;Enum&gt;&gt; Direction</text>
+    <rect style="fill: #ffffff" x="-119.506" y="686.64" width="202.15" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-119.506" y="686.64" width="202.15" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-116.506" y="700.64">+HAUT</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-116.506" y="716.64">+BAS</text>
+    <rect style="fill: #ffffff" x="-119.506" y="722.64" width="202.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-119.506" y="722.64" width="202.15" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1089.02,383.136 1101.26,383.136 1101.26,383.342 1176.43,383.342 "/>
+    <polygon style="fill: #000000" points="1201.61,383.342 1187.61,388.142 1173.61,383.342 1187.61,378.542 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1201.61,383.342 1187.61,388.142 1173.61,383.342 1187.61,378.542 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1103.26" y="380.239"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1093.02" y="380.136">4</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="1169.61" y="380.342"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="990.556,557.86 990.556,505.588 975.276,505.588 975.276,442.143 "/>
+    <polygon style="fill: #000000" points="990.556,583.032 985.756,569.032 990.556,555.032 995.356,569.032 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="990.556,583.032 985.756,569.032 990.556,555.032 995.356,569.032 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="982.916" y="502.588"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1001.56" y="579.032"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="979.276" y="454.143"> 1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="979.276" y="470.143"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="623.596,343.31 710.2,343.31 710.2,383.136 861.489,383.136 "/>
+    <polygon style="fill: #000000" points="598.424,343.31 612.424,338.51 626.424,343.31 612.424,348.11 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="598.424,343.31 612.424,338.51 626.424,343.31 612.424,348.11 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="712.2" y="360.223"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="630.424" y="340.31"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="857.489" y="380.136"> 1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="857.489" y="396.136"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="202.122,23.4662 115.496,23.4662 115.496,24.4936 96.7483,24.4936 "/>
+    <polygon style="fill: #000000" points="71.5767,24.4936 85.5767,19.6936 99.5767,24.4936 85.5767,29.2936 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="71.5767,24.4936 85.5767,19.6936 99.5767,24.4936 85.5767,29.2936 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="117.496" y="20.9799"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="198.122" y="20.4662">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="103.577" y="21.4936"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="624.6,263.31 704.879,263.31 704.879,108.91 796.329,108.91 "/>
+    <polygon style="fill: #000000" points="599.429,263.31 613.429,258.51 627.429,263.31 613.429,268.11 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="599.429,263.31 613.429,258.51 627.429,263.31 613.429,268.11 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="706.879" y="183.11"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="631.429" y="260.31"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="792.329" y="105.91">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="389.562,590.813 389.562,526.7 262.324,526.7 262.324,391.369 "/>
+    <polygon style="fill: #000000" points="262.323,366.197 267.124,380.197 262.324,394.197 257.524,380.197 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="262.323,366.197 267.124,380.197 262.324,394.197 257.524,380.197 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="325.943" y="523.7"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="393.562" y="586.813">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="273.323" y="378.197"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="598.424,394.482 598.424,526.458 769.956,526.458 769.956,584.038 "/>
+    <polygon style="fill: #000000" points="598.424,369.31 603.224,383.31 598.424,397.31 593.624,383.31 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="598.424,369.31 603.224,383.31 598.424,397.31 593.624,383.31 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="684.19" y="523.458"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="609.424" y="381.31"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="773.956" y="580.038">2</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-18.4306,632.459 -18.4306,603.313 -17.8522,603.313 -17.8522,562.995 "/>
+    <polygon style="fill: #ffffff" points="-18.4306,657.631 -23.2306,643.631 -18.4306,629.631 -13.6306,643.631 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-18.4306,657.631 -23.2306,643.631 -18.4306,629.631 -13.6306,643.631 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="-18.1414" y="600.313"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-7.4306" y="653.631"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-13.8522" y="574.995">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-17.8522,444.983 -17.8522,401.34 -73.7766,401.34 -73.7766,394.482 "/>
+    <polygon style="fill: #ffffff" points="-73.7766,369.31 -68.9766,383.31 -73.7766,397.31 -78.5766,383.31 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-73.7766,369.31 -68.9766,383.31 -73.7766,397.31 -78.5766,383.31 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="-45.8144" y="398.34"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-13.8522" y="440.983">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-62.7766" y="381.31"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-169.256,116.664 -169.256,301.098 -169.152,301.098 -169.152,445.988 "/>
+    <polygon style="fill: #ffffff" points="-169.256,91.4922 -164.456,105.492 -169.256,119.492 -174.056,105.492 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-169.256,91.4922 -164.456,105.492 -169.256,119.492 -174.056,105.492 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="-169.204" y="298.098"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-158.256" y="103.492"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-165.152" y="441.988">1</text>
+  </g>
+</svg>
