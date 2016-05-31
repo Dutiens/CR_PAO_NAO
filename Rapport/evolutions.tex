@@ -1,4 +1,26 @@
 \section{Evolutions potentielles}
 \label{sec:Evolutions potentielles}
-
+\begin{itemize}
+  \item Développement d'un serveur gérant l'IA et les decisions du NAO tandis que la reconnaissance sera sur le NAO -> gain de rapidité conséquent
+  \item Revoir la position du NAO
+        \begin{itemize}
+          \item ne pas chercher à se repositionner si la position détéctée au lancement du programme est correcte
+          \item chercher l'écran du regard à l'initialisation
+          \item desasservir les moteurs du bras droit et des jambes afin d'éviter les surchauffes
+          \item effectuer des \"dandinements\" sur un maximum de parties du corps possible, encore une fois dans le but d'éviter les surchauffes
+        \end{itemize}
+  \item Revoir la conception du socle bien trop abimé et instable
+  \item Revoir la conception actuelle de l'IA
+        \begin{itemize}
+          \item pouvoir détécter les changements de direction
+          \item à chaque changement de direction de la balle (J1 -> J2 ou J1 <- J2), sauvegarder l'ensemble des positions de la balle
+          \item déterminer la trajectoire complète de la balle
+          \item à chaque nouvelle position de balle, vérifier si la balle est bien sur la trajectoire (seuil compris)
+          \item si ce n'est pas le cas revérifier la trajectoire calculée à partir de l'ensemble de balles stockées, et supprimer les valeurs incohérentes
+          \item effacer la liste de balle à chaque changement de direction / remise en jeu
+          \item essayer detecter si le coup va être gagnant afin de prévoir les remises en jeu
+        \end{itemize}
+  \item Détécter quelle barre est controllée par le NAO et jouer en conséquence
+  \item Développement d'un module de test affichant en temps réel les positions estimées des éléments du jeu estimées par la reconnaisance, et les positions d'arrivées prévues par l'IA
+\end{itemize}
 \pagebreak
