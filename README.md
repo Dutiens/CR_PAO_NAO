@@ -33,3 +33,4 @@
   * etudeexistant.tex
   * conclusion.tex
   * conception.tex
+  * presentation.tex
