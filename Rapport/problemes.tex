@@ -4,13 +4,16 @@
   \par Au cours de ce projet nous nous sommes retrouvé face à un certain nombre de difficultés, dans des domaines assez variés compte tenu de l'évolution du projet.
   En effet, les problèmes que nous avons pu rencontrer au cours des premières semaines concernaient plus des problèmes matériels,
   tandis que ceux rencontrés durant les dernières semaines étaient plus de l'ordre de contraintes de développement.\\
+  Les sous-parties suivantes traiterons donc, par ordre chronologique, de ces problèmes auxquels nous avons dû faire face.\\
 
   \subsection{Semaine du 18 janvier au 1 fevrier}
     \label{sub:Semaine du 18 janvier au 1 fevrier}
     \begin{itemize}
-      \item Obtention du statut de développeur sur la plateforme aldebaran, afin de récupérer l’API NAOQI.
-      \item Obligation d’utiliser une ancienne version de python avec l’API NAOQI.
-      \item Débogage du code fourni.\\
+      \item Les dépendances du projet ne nous ayant pas été fournies, nous avons dû les récupérer directement depuis internet.
+      Or l'API NaoQI, indispensable pour interagir avec le robot, necessite l'obtention d'un statut de développeur au sein de la plateforme aldebaran, statut qui nous a été assez difficile à obtenir.
+      \item Nous avons mis un certain temps à nous appercevoir que l'API NaoQI repose sur une ancienne version du langage Python (2.7).
+      % NOTE: Flo t'as certainement un truc à ajouter ici pour les contraintes que ça a pu apporter
+      \item Le code fourni n'était pas fonctionnel: il contenait un certain nombre de bugs que nous avons du corriger.\\
     \end{itemize}
 
 
@@ -18,10 +21,11 @@
   \subsection{Semaine du 2 fevrier au 29 fevrier}
   \label{sub:Semaine du 2 fevrier au 29 fevrier}
     \begin{itemize}
-      \item Installer python et toutes les librairies nécessaires au projet sous Windows et sur machine virtuelle Linux : la version de l’OS du NAO implique l’utilisation de librairies obsolètes depuis plus d’un an et demi.
-      \item La nouveauté du langage python nous freine un peu (Florian excepté).
-      \item Réussir à communiquer correctement entre nous afin de transmettre au mieux nos idées.
-      \item Nous mettre d’accord sur certains points du projet (surtout au niveau du choix des fonctions publiques).\\
+      \item L'installation de Python, et surtout de toutes les librairies nécessaires au fonctionnement du projet, sous Windows et sur machine virtuelle Linux s'est révéler être assez fastidieuse.
+      En effet, il semblerait que l'OS du NAO n'ait jamais été mis à jour. Cela implique l’utilisation de librairies obsolètes depuis plus d’un an et demi, souvent difficile à obtenir et parfois peu documentées.
+      \item A l'exception de Florian qui pratiquait déjà le Python depuis un certain temps, la nouveauté de ce langage nous freine un peu.
+      \item Nous éprouvons parfois quelques difficultées à communiquer correctement entre nous, afin de transmettre au mieux nos idées.
+      Certains points de conception du projet on donc été source de débats animés.\\
     \end{itemize}
 
 
