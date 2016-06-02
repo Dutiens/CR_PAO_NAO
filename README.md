@@ -7,3 +7,29 @@
  * Compiler à l'aide de la commande bash compile.sh
 
  * Utiliser le fichier Rapport/commandes.tex afin de rajouter des commandes latex
+
+
+## Répartition du travail:
+ * Thibault :
+  * evolutions.tex
+  * visites.tex
+  * problemes.tex
+  * dev_elements.tex
+  * dev_main.tex
+  * dev_recoV2.tex
+ * Florian :
+  * dev_cameraHelper.tex
+  * dev_ia.tex
+  * dev_recoTester.tex
+  * dev_recoV2.tex
+  * dev_stats.tex
+ * Enora :
+  * introduction.tex
+  * dev_reconnaissance.tex
+  * dev_recoV1.tex
+ * Non attribué :
+  * dev_action.tex
+  * dev_controle.tex
+  * etudeexistant.tex
+  * conclusion.tex
+  * conception.tex
