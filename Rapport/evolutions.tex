@@ -13,36 +13,45 @@
     ce temps serait largement compensé par l'envoi des informations utiles extraites sur les images capturées au lieu des images complètes, comme c'est actuellement le cas.
     Un ordinateur restant toujours plus puissant que le NAO, il est plus interressant d'effectuer le reste des traitements sur le serveur, surtout dans le cas du développement d'une IA plus complexe.\\
 
-    \par Le principal problème de l'IA actuelle est le fait qu'elle ne base ses decisions que sur les deux dernières positions de balle qu'elle obtient. Cela implique
+    \par Le principal problème de l'IA actuelle est le fait qu'elle ne base ses decisions que sur les deux dernières positions de balle qu'elle obtient.
+    Cela implique que la position d'arrivée de la balle calculée peut changer après un rebond ou une remise en jeu.
+    La figure \ref{fig:illustration du problème IA} est assez representative du problème. \\
+    Pour palier à ce problème, les fonctionnalités suivantes devraient être ajoutés à l'IA:
+    \begin{itemize}
+      \item detection des changements de direction
+      \item detection des remises en jeu
+      \item sauvegarde de ensemble des positions de la balle entre chaque changement de direction et remise en jeu
+      \item calcul sous forme de vecteurs directionnels de l'ensemble de la trajectoire de la balle
+      \item sauvegarde de la trajectoire entre chaque changement de direction et remise en jeu
+      \item vérification de la position de chaque nouvelle balle par rapport à la trajectoire et aux balles précédentes
+    \end{itemize}
+    A partir de cette liste non exhaustive de fonctionnalités, et de la conception actuelle de l'IA, il devrait être aisé de palier aux problèmes actuels de l'IA.
+
     \begin{figure}[!h]
       \caption{illustration du problème IA}
+      \label{fig:illustration du problème IA}
       \centering
       \includegraphics[width=\textwidth]{Images/illustrationProblemeIA.png}
     \end{figure}
-          \begin{itemize}
-            \item pouvoir détécter les changements de direction
-            \item à chaque changement de direction de la balle (J1 -> J2 ou J1 <- J2), sauvegarder l'ensemble des positions de la balle
-            \item déterminer la trajectoire complète de la balle
-            \item à chaque nouvelle position de balle, vérifier si la balle est bien sur la trajectoire (seuil compris)
-            \item si ce n'est pas le cas revérifier la trajectoire calculée à partir de l'ensemble de balles stockées, et supprimer les valeurs incohérentes
-            \item effacer la liste de balle à chaque changement de direction / remise en jeu
-            \item essayer detecter si le coup va être gagnant afin de prévoir les remises en jeu
-          \end{itemize}
-
 
   \subsection{Amélioration du comportement}
   \label{sub:Amélioration du comportement}
-  \par Revoir la position du NAO
-        \begin{itemize}
-          \item ne pas chercher à se repositionner si la position détéctée au lancement du programme est correcte
-          \item chercher l'écran du regard à l'initialisation
-          \item desasservir les moteurs du bras droit et des jambes afin d'éviter les surchauffes
-          \item effectuer des \"dandinements\" sur un maximum de parties du corps possible, encore une fois dans le but d'éviter les surchauffes
-        \end{itemize}
+    \par Nous avons également pensé à quelques améliorations dont la finalité n'aurait aucun impact sur les performances du NAO, mais qui pouraient optimiser certaine de ses actions.\\
+
+    \par Il est inutile qu'au lancement du programme le robot cherche à reprendre sa position de jeu s'il est déjà bien positionné.
+    De plus, nous avons constaté que les mouvements du NAO ont tendance à être assez brusques au court de cette étape, et ont impacté de manière non négligeable su l'état du socle pour le joystick.
+    Il serait donc interressant de développer une fonctionnalité permettant de détécter la position du NAO au lancement et d'agir ou non en conséquence.\\
+
+    \par Bien qu'il soit beaucoup plus aisé de placer le NAO en face de l'écran en face de l'écran depuis que le module nao\_camera\_helper a été développé,
+    il serait interressant que le robot cherche par lui même la position de l'écran en pivotant sa tête lors de son initialisation.\\
+
+    \par Nous avons remarqué que NAO a rapidement des problèmes de surchauffe lorsque ses moteurs restent asservis sur la même position pendant trop longtemps.
+    Or certains de ces moteurs, comme ceux du bras gauche ou des jambes n'ont aucun interet à rester bloqué puisqu'ils ne sont pas utilisé dans le cadre de ce projet.
+    Desasservir ces moteurs, ainsi qu'effectuer des \"dandinements\" sur un maximum de parties du corps du NAO possible pourrait fortement limiter ces surchauffes.
 
   \subsection{Autres améliorations}
   \label{sub:Autres améliorations}
     \par Revoir la conception du socle bien trop abimé et instable
-    \par Détécter quelle barre est controllée par le NAO et jouer en conséquence
+    \par Detecter quelle barre est controllée par le NAO et jouer en conséquence
     \par Développement d'un module de test affichant en temps réel les positions estimées des éléments du jeu estimées par la reconnaisance, et les positions d'arrivées prévues par l'IA
 \pagebreak
