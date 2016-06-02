@@ -34,6 +34,20 @@
       \includegraphics[width=\textwidth]{Images/illustrationProblemeIA.png}
     \end{figure}
 
+
+  \subsection{Autres améliorations}
+  \label{sub:Autres améliorations}
+    \par Le socle du joystique actuel est bien trop abimé pour permettre au NAO de jouer convenablement.
+    En effet certaines de ses actions ne sont pas effectués car c'est le socle qui bouge au lieu du joystique.
+    Il faudrait reconcevoir un nouveau socle, dans l'idéal plus resistant que l'actuel.\\
+
+    \par Actuellement le NAO ne joue qu'avec le joystique à droite de l'écran.
+    Il pourrait donc être interessant de permettre au robot de detecter quelle barre il utilise. \\
+
+    \par Il nous est actuellement assez difficile de vérifier en temps réel les decisions de l'IA et leur validité.
+    Pour cela, le développement d'un module de test affichant en temps réel les positions estimées par la reconnaisance des éléments du jeu, et les positions d'arrivées prévues par l'IA sur un plateau graphique, pourrait être une bonne solution.
+
+
   \subsection{Amélioration du comportement}
   \label{sub:Amélioration du comportement}
     \par Nous avons également pensé à quelques améliorations dont la finalité n'aurait aucun impact sur les performances du NAO, mais qui pouraient optimiser certaine de ses actions.\\
@@ -48,10 +62,4 @@
     \par Nous avons remarqué que NAO a rapidement des problèmes de surchauffe lorsque ses moteurs restent asservis sur la même position pendant trop longtemps.
     Or certains de ces moteurs, comme ceux du bras gauche ou des jambes n'ont aucun interet à rester bloqué puisqu'ils ne sont pas utilisé dans le cadre de ce projet.
     Desasservir ces moteurs, ainsi qu'effectuer des \"dandinements\" sur un maximum de parties du corps du NAO possible pourrait fortement limiter ces surchauffes.
-
-  \subsection{Autres améliorations}
-  \label{sub:Autres améliorations}
-    \par Revoir la conception du socle bien trop abimé et instable
-    \par Detecter quelle barre est controllée par le NAO et jouer en conséquence
-    \par Développement d'un module de test affichant en temps réel les positions estimées des éléments du jeu estimées par la reconnaisance, et les positions d'arrivées prévues par l'IA
 \pagebreak
