@@ -38,11 +38,14 @@
       Bien qu’il fût possible de nous connecter en SSH au NAO (qui était par conséquent connecté au réseau local),
       il nous était impossible d’accéder à l’interface web, une authentification sur les services web d’aldebaran étant requise à l’issue de la mise à jour.
       C’est finalement Florian qui a trouvé d’où venait le problème : l’heure et la date du robot s’initialisaient à sa valeur d’usine, lors de chaque redémarrage.
-      Une fois le correctif appliqué, nous avons enfin pu accéder à l’interface web du NAO afin de
-      lui appliquer une configuration de base correcte (langue, position lors de l’initialisation).
+      Une fois le correctif appliqué, nous avons enfin pu accéder à l’interface web du NAO afin de lui appliquer une configuration de base correcte (langue, position à l'issue du démarrage).
       \item Le NAO bleu n’a jamais été mis à jour (sa version est antérieur à celle du NAO rouge avant la mise à jour),
       et la version du logiciel choregraphe (permettant d’appliquer cette mise à jour) nécessite une clé que nous ne possédons pas.
-      \item Nous avons éprouvé quelques difficultés à nous souvenir de la façon de concevoir des diagrammes UML.\\
+      \item Nous avons éprouvé quelques difficultés à nous souvenir de la façon de concevoir les diagrammes de classes,
+      notamment sur le sens des compositions et des cardinalités, qui n'ont pas encore été abordés en cours d'UML.
+      \item N'ayant encore manipulé aucun logiciels de conception de diagrammes de classes (tous ceux que nous avions pû concevoir par le passé étaient sous format papier),
+      quelques recherches ont du être effectués pour trouver un logiciel gratuit répondant à nos besoins.
+      Après quelques tests, notre choix c'est finalement porté sur le logiciel VisualParadigme.
     \end{itemize}
 
 
@@ -50,7 +53,9 @@
   \subsection{Semaine du 16 mars au 29 mars}
   \label{sub:Semaine du 16 mars au 29 mars}
     \begin{itemize}
-      \item Comprendre le fonctionnement des diagrammes de séquence, nouveau pour nous.
+      \item Les fonctionnalités du logiciel VisualParadigme étant beaucoup trop bridées dans sa version d'essai, la conception a du être réeffectuée sur le logiciel DIA.
+      \item Les diagrammes de séquences n'ont pas encore été abordées en cours d'UML, et nous ne les avions encore jamais rencontrés par le passé.
+      Comprendre leur fonctionnement à donc necessité un certain temps.
       \item Trouver un logiciel de conception de diagramme de séquence.
       En effet nous l’avons d’abord recopié (la conception a eu lieu sur le tableau de la salle de projet) sur le logiciel DIA,
       cependant ce dernier ne répondant pas à certaines normes d’UML2 la reproduction n’était pas parfaite.
