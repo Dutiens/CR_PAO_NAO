@@ -14,7 +14,7 @@
   * evolutions.tex −> __fait__
   * visites.tex -> __fait__
   * problemes.tex -> __fait__
-  * dev_elements.tex
+  * dev_elements.tex -> __fait__
   * dev_main.tex -> __fait__
   * dev_recoV2.tex
  * Florian :
