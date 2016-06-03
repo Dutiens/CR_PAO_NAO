@@ -22,6 +22,7 @@
   * dev_ia.tex -> __fait__
   * dev_recoTester.tex -> __fait__
   * dev_recoV2.tex
+  * etudeexistant.tex -> __commencé__
  * Enora :
   * introduction.tex -> __fait__
   * dev_reconnaissance.tex
@@ -29,7 +30,6 @@
  * Non attribué :
   * dev_action.tex
   * dev_controle.tex
-  * etudeexistant.tex
   * conclusion.tex
   * conception.tex -> __commencé__
   * presentation.tex

@@ -1,3 +1,43 @@
 \section{Etude de l'existant}
 \label{sec:Etude de l'existant}
+\par Nous avons eu comme base le code produit par une équipe auparavant qui avait pour 
+but de produire une version permettant de confirmer la faisabilité du projet. Leur travail 
+s'articulait autour de deux grands points qui sont l'IA et principalement la reconnaissance.
+
+    \subsection{Reconnaissance}
+    \par Au niveau de la reconnaissance, ces derniers ont produits différents modules de 
+    reconnaissance. Ainsi ces différentes méthodes allaient de la comparaison d'histogramme, 
+    qui se trouvait être peu fonctionnelle et offrait trop souvent de faux positifs au niveau 
+    de la reconnaissance. Une autre méthode qui a été celle retenue consistait en l'utilisation 
+    de la bibliothèque OpenCV, spécialisée dans le traitement d'images en temps réel, afin de 
+    trouver les contours et formes des images afin de détecter les différents éléments du jeu de Pong.
+    
+    \par Cette méthode retenue offrait la plupart du temps une bonne reconnaissance du terrain,
+    ainsi que des différents éléments du jeu de Pong, mais avait pour défaut majeur un très long 
+    temps de traitement. Ainsi, la contrainte de réaction en temps réel du robot pour pouvoir jouer 
+    correctement ne pouvait pas être respectée, le traitement durant environ 2 à 3 secondes pour réagir.
+    
+    \subsection{IA}
+    \par L'IA qui a tout d'abord été implémentée était très basique. En effet cette dernière se contentait 
+    de suivre la balle sur l'axe vertical avec la raquette. De plus la prise en compte du temps pour atteindre 
+    la même hauteur que la balle n'était pas présente, le Nao se contentait donc de se déplacer par accoups afin 
+    d'atteindre la position voulue après plusieurs reconnaissances effectuées.
+    
+    \par Malheureusement, du fait de la lenteur de la reconnaissance, cette solution n'était pas viable 
+    pour faire jouer correctement le robot au Pong. Il arrivait donc de temps en temps que le Nao arrivait à 
+    atteindre la balle à temps.
+    
+    \subsection{Structure globale du code}
+    \par Le but étant de produire une version permettant de confirmer la faisabilité du projet, 
+    le code produit ne suivait pas une structure modulaire, était difficilement maintenable et 
+    compréhensible dans l'état dans lequel il se trouvait. Ainsi, les différents appels au robot 
+    étaient effectués autant au niveau de l'IA que de la reconnaissance, ce qui rendait le code 
+    très difficilement débuggable du fait de la dispersion des traitements dans les différentes 
+    parties du code.
+    
+    \par Nous trouvions donc trois fichiers principaux qui étaient les fichiers Controle, IA et Reconnaissance.
+    Notre but principal lors de ce PAO était de restructurer le projet afin de le rendre plus modulaire et facilement 
+    maintenable en effectuant une meilleure répartition des différents éléments nécessaires au bon fonctionnement 
+    du projet.
+
 \pagebreak
