@@ -4,43 +4,43 @@
 de tester ces deux méthodes. Un ensemble d'images de tests où les positions étaient connues nous a donc
 été fourni.
 
-\par Afin d'effectuer nos tests, nous avons donc développé un outil (Fichier statistique_reconnaissance.py) 
-nous permettant de récupérer les différentes erreurs produites par notre reconnaissance dans un fichier au format 
-CSV. Les données sauvegardées dans le fichier CSV sont les suivantes : 
+\par Afin d'effectuer nos tests, nous avons donc développé un outil (Fichier statistique\_reconnaissance.py)
+nous permettant de récupérer les différentes erreurs produites par notre reconnaissance dans un fichier au format
+CSV. Les données sauvegardées dans le fichier CSV sont les suivantes :
 
-\begin{itemizer}
-    \item Chemin vers l'image; 
-    \item Erreur pour la balle sur l'axe horizontal; 
+\begin{itemize}
+    \item Chemin vers l'image;
+    \item Erreur pour la balle sur l'axe horizontal;
     \item Erreur pour la balle sur l'axe vertical;
     \item Erreur pour la barre gauche;
     \item Erreur pour la barre droite;
     \item Erreur globale moyenne;
     \item Temps mis pour la reconnaissance du terrain;
     \item Temps mis pour la reconnaissance des éléments
-\end{itemizer}
+\end{itemize}
 
-\par Il c'est avéré que les données qui nous avaient été fournies ne correspondaient pas aux positions sur les images. 
+\par Il c'est avéré que les données qui nous avaient été fournies ne correspondaient pas aux positions sur les images.
 Il nous était donc impossible d'effectuer des tests avec celles-ci.
 
-\par Nous avons donc décidé de développer une deuxième version de l'outil (Fichier nao_capture_pong.py). L'objectif 
-de cette deuxième version est de générer des états d'un jeu de Pong où les coordonnées sont connues et de faire en 
-sorte que le Nao prenne une image du terrain et effectue sa reconnaissance. Ainsi nous obtenons les données nous 
+\par Nous avons donc décidé de développer une deuxième version de l'outil (Fichier nao\_capture\_pong.py). L'objectif
+de cette deuxième version est de générer des états d'un jeu de Pong où les coordonnées sont connues et de faire en
+sorte que le Nao prenne une image du terrain et effectue sa reconnaissance. Ainsi nous obtenons les données nous
 permettant de calculer l'erreur produite par nos méthodes de reconnaissances.
 
-\par Malheureusement, il ne nous a pas été possible de terminer cette version de l'outil du fait du temps qui nous était 
-imparti pour effectuer le projet. Nous avons donc préféré concentrer nos efforts sur des points plus importants du 
-projet. Ainsi, l'outil dans sa deuxième version est actuellement capable de générer un état du jeu 
-(À l'aide de la librairie PyQt4). 
-La partie manquante étant la capture d'image par le robot ainsi que l'enregistrement des données. Le programme devra donc prendre à terme 
+\par Malheureusement, il ne nous a pas été possible de terminer cette version de l'outil du fait du temps qui nous était
+imparti pour effectuer le projet. Nous avons donc préféré concentrer nos efforts sur des points plus importants du
+projet. Ainsi, l'outil dans sa deuxième version est actuellement capable de générer un état du jeu
+(À l'aide de la librairie PyQt4).
+La partie manquante étant la capture d'image par le robot ainsi que l'enregistrement des données. Le programme devra donc prendre à terme
 en tant que paramètre l'IP du Nao.
 
 \par L'éxecution de ces outils se fait à partir du dossier 'nao' à l'aide des commandes suivantes :
 \begin{center}
-	{python2 chemin_vers_statistique_reconnaissance.py [IP du Nao]}
+	{python2 chemin\_vers\_statistique\_reconnaissance.py [IP du Nao]}
 \end{center}
 \begin{center}
-	{python2 chemin_vers_nao_capture_pong.py [IP du Nao]}
+	{python2 chemin\_vers\_nao\_capture\_pong.py [IP du Nao]}
 \end{center}
 
-\par Concernant le premier programme, il est a noté que les images doivent se situer dans le dossier 'nao' afin de 
+\par Concernant le premier programme, il est a noté que les images doivent se situer dans le dossier \'nao\' afin de
 fonctionner.
