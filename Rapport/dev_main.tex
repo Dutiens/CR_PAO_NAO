@@ -1,2 +1,13 @@
 \subsection{Main}
 \label{sub:Main}
+
+  \par Le script main permet l'execution de l'ensemble du projet.
+  Il prend en paramètre une adresse IP sous la forme d'une chaine de caractères, et eventuellement un port.
+  Dans le cas ou le port ne serait pas renseigné, un port par défaut est attribué.
+  Cette adresse IP correspond à celle du NAO sur le réseau local.\\
+  La première étape consiste donc à initialiser le robot, et lui appliquer sa position de jeu.\\
+  Ensuite, il faut déterminer la vitesse de déplacement en pixels par secondes de la barre controlée par le NAO.
+  Pour cela, la capture de deux images, interrompues par une action du bras du NAO d'une durée suffisante (une seconde dans notre cas), puiss leur traitement est necessaire.
+
+  \par Le script est composé de deux fonctions: getImage(nao, reconnaissance) et traitement(nao, reconnaissance).\\
+  La fonction getImage(nao, reconnaissance) permet, à partir d'une classe nao et reconnaissance initialisée.
