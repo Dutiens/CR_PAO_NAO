@@ -11,9 +11,9 @@
 
 ## Répartition du travail:
  * Thibault :
-  * evolutions.tex
-  * visites.tex
-  * problemes.tex
+  * evolutions.tex −> __fait__
+  * visites.tex -> __fait__
+  * problemes.tex -> __fait__
   * dev_elements.tex
   * dev_main.tex
   * dev_recoV2.tex
@@ -24,7 +24,7 @@
   * dev_recoV2.tex
   * dev_stats.tex
  * Enora :
-  * introduction.tex
+  * introduction.tex -> __fait__
   * dev_reconnaissance.tex
   * dev_recoV1.tex
  * Non attribué :
@@ -32,5 +32,5 @@
   * dev_controle.tex
   * etudeexistant.tex
   * conclusion.tex
-  * conception.tex
+  * conception.tex -> __commencé__
   * presentation.tex
