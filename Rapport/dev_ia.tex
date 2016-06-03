@@ -1,2 +1,24 @@
 \subsection{Module IA}
 \label{sub:Module IA}
+\par Nous avons décidé pour ce PAO d'améliorer l'IA du Nao qui se contentait
+auparavant de s'aligner selon l'axe vertical avec la balle.
+\par L'IA que nous avons dévellopée suit des règles simples qui sont les
+suivantes :
+\begin{itemize}
+	\item Si la balle se dirige vers la barre adverse, l'action renvoyée doit
+		permettre au Nao de se positionner au milieu du terrain selon l'axe
+		vertical.
+	\item Sinon à l'aide de deux positions de la balle, l'angle de déplacement
+		de celle-ci est calculé, puis la position où cette dernière est censée
+		arriver au final. Ainsi l'IA peut être capable de se positionner
+		correctement.
+\end{itemize}
+
+\par Nous avons admis qu'un rebond sur un mur avait pour effet sur l'angle de
+l'inverser verticalement (Exemple: Un angle de 45° devient 135°).
+\par Du fait que dans notre conception il a été décidé que le robot devait
+prendre un temps de montée ou de descente, l'IA renvoie l'action correspondante.
+Pour cela il lui est nécessaire de calculer le temps de l'action afin
+d'atteindre la position voulue.
+\par Il s'est révélé par la suite que la vitesse passée à l'IA que nous obtenons ne
+semble pas cohérente, ce qui fausse en partie les résultats pour l'action.
