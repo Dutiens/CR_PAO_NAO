@@ -15,7 +15,7 @@
   * visites.tex -> __fait__
   * problemes.tex -> __fait__
   * dev_elements.tex
-  * dev_main.tex
+  * dev_main.tex -> __fait__
   * dev_recoV2.tex
  * Florian :
   * dev_cameraHelper.tex -> __fait__
