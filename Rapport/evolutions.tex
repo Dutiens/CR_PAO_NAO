@@ -5,25 +5,25 @@
   \label{sub:Améliorations des performances}
     \par Bien que nous ayons considérablement augmenté le temps de réaction du NAO, il pourrait être intéressant de gagner encore quelques precieux dixièmes de secondes.\\
     Nous avons constaté que l'un des principaux facteurs de ce temps de réaction était l'envoi par le réseau wifi, de l'image capturée par le NAO, jusqu'à l'ordinateur effectuant les calculs.
-    Ce temps d'envoi a déjà été considérablement réduit en utilisant l'emtteur wifi local \"foreanao\", et non le réseaux wifi public de l'INSA.
-    Il est cependant indéniable qu'à l'heure actuel le moyen permettant le transfert de fichier dans un réseau local serait l'utilisation de cables ethernet.
+    Ce temps d'envoi a déjà été considérablement réduit en utilisant l'émetteur wifi local \"foneranao\", et non le réseaux wifi public de l'INSA.
+    Il est cependant indéniable qu'à l'heure actuelle le moyen permettant le transfert de fichiers dans un réseau local serait l'utilisation de cables ethernet.
     Passer à un réseau local filaire pourrait donc être une première amélioration matérielle.\\
-    Une seconde amélioration serait le développement d'un serveur gérant l'IA et les decisions du NAO, tandis que la reconnaissance serait effectuée directement sur le NAO.
+    Une seconde amélioration serait le développement d'un système client/serveur gérant l'IA et les decisions du robot sur une machine à part, tandis que la reconnaissance serait effectuée directement sur le NAO.
     En effet, bien que certains calculs puissent être assez couteux s'ils sont effectués sur le NAO,
     ce temps serait largement compensé par l'envoi des informations utiles extraites sur les images capturées au lieu des images complètes, comme c'est actuellement le cas.
-    Un ordinateur restant toujours plus puissant que le NAO, il est plus interressant d'effectuer le reste des traitements sur le serveur, surtout dans le cas du développement d'une IA plus complexe.\\
+    Un ordinateur restant toujours plus puissant que le robot, il est plus interressant d'effectuer le reste des traitements dessus, surtout dans le cas du développement d'une IA plus complexe.\\
 
-    \par Le principal problème de l'IA actuelle est le fait qu'elle ne base ses decisions que sur les deux dernières positions de balle qu'elle obtient.
+    \par Le principal problème de l'IA actuelle est le qu'elle ne base ses decisions que sur les deux dernières positions de balle qu'elle obtient.
     Cela implique que la position d'arrivée de la balle calculée peut changer après un rebond ou une remise en jeu.
     La figure \ref{fig:illustration du problème IA} est assez representative du problème. \\
-    Pour palier à ce problème, les fonctionnalités suivantes devraient être ajoutés à l'IA:
+    Pour palier à ce problème, les fonctionnalités suivantes devraient être ajoutées à l'IA:
     \begin{itemize}
-      \item detection des changements de direction
-      \item detection des remises en jeu
-      \item sauvegarde de ensemble des positions de la balle entre chaque changement de direction et remise en jeu
-      \item calcul sous forme de vecteurs directionnels de l'ensemble de la trajectoire de la balle
-      \item sauvegarde de la trajectoire entre chaque changement de direction et remise en jeu
-      \item vérification de la position de chaque nouvelle balle par rapport à la trajectoire et aux balles précédentes
+      \item détection des changements de direction;
+      \item détection des remises en jeu;
+      \item sauvegarde de l'ensemble des positions de la balle entre chaque changement de direction et remise en jeu;
+      \item calcul sous forme de vecteurs directionnels de l'ensemble de la trajectoire de la balle;
+      \item sauvegarde de la trajectoire entre chaque changement de direction et remise en jeu;
+      \item vérification de la position de chaque nouvelle balle par rapport à la trajectoire et aux balles précédentes.
     \end{itemize}
     A partir de cette liste non exhaustive de fonctionnalités, et de la conception actuelle de l'IA, il devrait être aisé de palier aux problèmes actuels de l'IA.
 
@@ -37,31 +37,31 @@
 
   \subsection{Autres améliorations}
   \label{sub:Autres améliorations}
-    \par Le socle du joystique actuel est bien trop abimé pour permettre au NAO de jouer convenablement.
-    En effet certaines de ses actions ne sont pas effectués car c'est le socle qui bouge au lieu du joystique.
+    \par Le socle du joystick actuel est bien trop souple pour permettre au NAO de jouer convenablement.
+    En effet certaines de ses actions ne sont pas effectuées du fait que le socle bouge à la place du joystick.
     Il faudrait reconcevoir un nouveau socle, dans l'idéal plus resistant que l'actuel.\\
 
-    \par Actuellement le NAO ne joue qu'avec le joystique à droite de l'écran.
-    Il pourrait donc être interessant de permettre au robot de detecter quelle barre il utilise. \\
+    \par Actuellement le NAO ne joue qu'avec le joystick à droite de l'écran.
+    Il pourrait donc être interessant de permettre au robot de detecter quelle barre il joue. \\
 
-    \par Il nous est actuellement assez difficile de vérifier en temps réel les decisions de l'IA et leur validité.
+    \par Il nous est actuellement assez difficile de vérifier en temps réel les décisions de l'IA et leur validité.
     Pour cela, le développement d'un module de test affichant en temps réel les positions estimées par la reconnaisance des éléments du jeu, et les positions d'arrivées prévues par l'IA sur un plateau graphique, pourrait être une bonne solution.
 
-    \par Il pourrait être intérressant que le NAO détécte la fin d'une partie.
+    \par Il pourrait être intérressant que le robot détecte la fin d'une partie.
 
 
   \subsection{Amélioration du comportement}
   \label{sub:Amélioration du comportement}
-    \par Nous avons également pensé à quelques améliorations dont la finalité n'aurait aucun impact sur les performances du NAO, mais qui pouraient optimiser certaine de ses actions.\\
+    \par Nous avons également pensé à quelques améliorations dont la finalité n'aurait aucun impact sur les performances du NAO, mais qui pouraient optimiser certaines de ses actions.\\
 
-    \par Il est inutile qu'au lancement du programme le robot cherche à reprendre sa position de jeu s'il est déjà bien positionné.
-    De plus, nous avons constaté que les mouvements du NAO ont tendance à être assez brusques au court de cette étape, et ont impacté de manière non négligeable su l'état du socle pour le joystick.
-    Il serait donc interressant de développer une fonctionnalité permettant de détécter la position du NAO au lancement et d'agir ou non en conséquence.\\
+    \par Il est inutile au lancement du programme que le robot cherche à reprendre sa position de jeu s'il est déjà bien positionné.
+    Nous avons constaté que les mouvements du NAO ont tendance à être assez brusques au court de cette étape, ce qui pourrait l'endommager.
+    Il serait donc interressant de développer une fonctionnalité permettant de détecter la position du NAO au lancement et d'agir ou non en conséquence.\\
 
-    \par Bien qu'il soit beaucoup plus aisé de placer le NAO en face de l'écran en face de l'écran depuis que le module nao\_camera\_helper a été développé,
+    \par Bien qu'il soit beaucoup plus aisé de placer le NAO en face de l'écran depuis que le module nao\_camera\_helper a été développé,
     il serait interressant que le robot cherche par lui même la position de l'écran en pivotant sa tête lors de son initialisation.\\
 
-    \par Nous avons remarqué que NAO a rapidement des problèmes de surchauffe lorsque ses moteurs restent asservis sur la même position pendant trop longtemps.
-    Or certains de ces moteurs, comme ceux du bras gauche ou des jambes n'ont aucun interet à rester bloqué puisqu'ils ne sont pas utilisé dans le cadre de ce projet.
-    Desasservir ces moteurs, ainsi qu'effectuer des \"dandinements\" sur un maximum de parties du corps du NAO possible pourrait fortement limiter ces surchauffes.
+    \par Nous avons remarqué que le robot a rapidement des problèmes de surchauffe lorsque ses moteurs restent asservis sur la même position pendant trop longtemps.
+    Or certains de ses moteurs, comme ceux du bras gauche ou des jambes n'ont aucun intérêt à rester bloqués puisqu'ils ne sont pas utilisés dans le cadre de ce projet.
+    Désasservir ses moteurs, ainsi qu'effectuer des \"dandinements\" sur un maximum de parties du corps du NAO possible pourrait fortement limiter ces surchauffes.
 \pagebreak
