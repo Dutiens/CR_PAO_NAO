@@ -20,9 +20,8 @@
  * Florian :
   * dev_cameraHelper.tex -> __fait__
   * dev_ia.tex -> __fait__
-  * dev_recoTester.tex
+  * dev_recoTester.tex -> __fait__
   * dev_recoV2.tex
-  * dev_stats.tex
  * Enora :
   * introduction.tex -> __fait__
   * dev_reconnaissance.tex
