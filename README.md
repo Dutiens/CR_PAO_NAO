@@ -18,7 +18,7 @@
   * dev_main.tex
   * dev_recoV2.tex
  * Florian :
-  * dev_cameraHelper.tex
+  * dev_cameraHelper.tex -> __fait__
   * dev_ia.tex
   * dev_recoTester.tex
   * dev_recoV2.tex
