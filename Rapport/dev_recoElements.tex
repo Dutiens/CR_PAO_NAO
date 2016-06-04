@@ -1,0 +1,26 @@
+\subsubsection{Détection éléments}
+\label{subs:Détection éléments}
+\par La détection des éléments a été une étape délicate. Plusieurs techniques ont donc été testées afin de définir la meilleure en terme de rapidité et de précision.
+
+\subsubsubsection{Technique de détection par forme}
+\par Une première idée, un peu simpliste, était de détecter les éléments par leur forme. 
+\par Pour cela on détectait les contours présents dans l'image et on définissait les formes que l'on recherchait : des rectangles plus haut que large pour les barres, et un petit carré pour la balle.
+\par Cette technique était très rapide mais très aléatoire quant à la détection. En effet selon la précision des images  les éléments recherchés ne pouvaient être considérés comme des rectangles.
+
+\subsubsubsection{Technique de détection par soustraction de contours}
+\par Une autre idée était de soustraire les contours de deux images consécutives afin de récupérer les éléments ayant bougé entre celles-ci.
+\par Quelques traitements supplémentaires étaient nécessaires pour différencier la balle des barres, mais globalement la détection était bonne et le traitement rapide.
+\par Cette solution nous gênait cependant par certains aspects. Notamment la nécessité d'avoir pris deux images pour pouvoir effectuer le traitement, sachant qu'il faut deux détections pour déterminer le mouvement de la balle, la première réaction aurait été assez lente. Un autre point gênant se posait lorsque le score changeait puisque les contours dans cette zone changeait.
+
+\subsubsubsection{Technique de détection par zone et par aire}
+\par Une autre technique consistait à détecter les éléments selon leur zone et leur aire.
+\par Cette solution part du principe que l'on connait à peu près la position x des barres puisque l'on cherche les éléments dont les contours donnent l'aire la plus grande dans les 2 extrémités du terrain. La détection de la balle se fait par recherche sur tout le terrain de l'élément ayant l'aire la plus petite et dont le point central est de couleur blanche (test de couleur dû à l'affichage du score).
+\par La ligne centrale du terrain posant problème, on a choisi une petite proportion de la partie centrale du terrain.
+\par Cette solution était rapide et la détection des éléments étaient bonnes sauf dans certains cas où ils étaient collés au bord du terrain. Dans le cas de la balle ce n'est pas très handicapant puisque cette configuration apparait beaucoup moins souvent que pour les barres qui posent plus problème.
+
+\subsubsubsection{Technique des gars}
+
+
+\subsubsubsection{Choix final}
+\par Finalement la solution retenu est un mélange de la détection par aire pour la balle, et de la $$ insérer nom technique ici $$ pour les barres.
+\par Ainsi on arrive à une détection assez précise et rapide.
