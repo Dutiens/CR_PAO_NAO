@@ -18,9 +18,21 @@
 \par La ligne centrale du terrain posant problème, on a choisi une petite proportion de la partie centrale du terrain.
 \par Cette solution était rapide et la détection des éléments étaient bonnes sauf dans certains cas où ils étaient collés au bord du terrain. Dans le cas de la balle ce n'est pas très handicapant puisque cette configuration apparait beaucoup moins souvent que pour les barres qui posent plus problème.
 
-\subsubsubsection{Technique des gars}
-
+\subsubsubsection{Technique de détection des éléments par moyennes et seuils}
+\par Une fois le terrain obtenu et recadré nous avons travaillé sur une
+technique permettant de détecter de manière presque sûre les différents éléments
+présents sur le terrain. Ainsi cette technique consiste à contraster tout
+d'abord le terrain en définissant les pixels de l'image à la couleur noire en
+dessous de la valeur 128, et blanche au dessus. Ensuite nous parcourons les
+côtés de l'image en essayant de trouver une région de pixels correspondant aux
+éléments (Moyenne de blanc sur les lignes et colonnes de l'image afin de récupérer les
+coordonnées et la taille des éléments). Ainsi nous avons pu observer avec notre
+technique que nous obtenons correctement les coordonnées des barres dans la
+majorité des cas (Nous avons pu observer lors de nos derniers essais quelques
+ratés où l'une des barres n'était pas détectée), mais nous n'obtenions pas de
+résultats satisfaisants concernant la détection de la balle.
 
 \subsubsubsection{Choix final}
-\par Finalement la solution retenu est un mélange de la détection par aire pour la balle, et de la $$ insérer nom technique ici $$ pour les barres.
+\par Finalement la solution retenu est un mélange de la détection par aire pour
+la balle, et de la détection par moyennes et seuils pour les barres.
 \par Ainsi on arrive à une détection assez précise et rapide.

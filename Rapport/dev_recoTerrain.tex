@@ -1,2 +1,16 @@
 \subsubsection{Détection terrain}
 \label{subs:Détection terrain}
+\par L'utilisation qui avait été faite d'OpenCV pour la détection du contour du
+terrain par la précédente équipe n'était que
+peu précise, peu rapide et renvoyait les contours extérieurs du terrain. Nous avons donc
+travaillé sur la récupération des contours intérieurs du terrain de manière
+suffisament sûre et rapide en accord avec les contraintes de temps d'exécution du projet.
+\par Nous avons donc réussi à faire en sorte d'obtenir ce que nous voulions en
+un temps suffisament faible pour permettre au robot d'agir dans un temps
+acceptable. Notre méthode consiste en la détection à l'aide d'OpenCV d'un
+rectangle ayant une taille minimale fixée afin de ne pas détecter les éléments
+du terrain, on découpe grossièrement l'image de sorte à inclure le rectangle
+détecté, puis on répète l'opération jusqu'à ne plus détecter de rectangle. Enfin
+on recadre le dernier rectangle obtenu de sorte à ne plus avoir de
+perspective sur l'image et faciliter le traitement.
+
