@@ -27,7 +27,7 @@
   * introduction.tex -> __fait__
   * dev_reconnaissance.tex -> __fait__
   * dev_recoV1.tex -> __fait__
-  * dev_action.tex
+  * dev_action.tex -> __fait__
   * conclusion.tex
   * presentation.tex
  * Non attribué :
