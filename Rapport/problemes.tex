@@ -79,15 +79,14 @@
       Cependant comme nous ne l’avions pas utilisé depuis un moment, cela a nécessité un certain temps de réadaptation.
       \item De nombreux problèmes, maintenant résolus, se sont présentés à nous pendant le développement de la Reconnaissance V2:
             \begin{itemize}
-              \item afin de de détecter les éléments du jeu, la technique utilisée consiste à faire une moyenne du niveau de gris sur chaque ligne ou colonne.
-              Si le résultat obtenu contient des valeurs comprises entre deux seuils paramétrés et pendant distance cohérente, nous pouvons en déduire la présence d’un élément du jeu.
-              Un des premiers problèmes auquel nous avons été confronté a été de déterminer ces seuils.
+              \item un des premières difficultés face à laquelle nous avons du faire face a été de determiner les seuils des niveaux de gris à utiliser pour la detection des balles.
               \item nous avons tout d’abord utilisé les images fournies par M.Delestre afin de détecter les éléments du pong.
               Il est cependant rapidement apparu que la résolution ainsi que la trop forte saturation en gris des l’images faussaient la plupart de nos résultats.
               \item après quelques tests sur le NAO, nous nous sommes rendu compte que l’apparence du pong avait été modifié depuis la capture des images que nous possédions.
               Cela impactait donc de manière assez conséquente le travail accompli et nous avons du refaire quelques prises.
               \item afin de régler les problèmes de seuil, une solution efficace consistait à passez à 0 les niveaux de gris inférieurs à 128, et monter à 255 les autres.
               Cependant le temps de calcul nécessaire à cette méthode rendait impossible l’application du module de reconnaissance sur le NAO.
+              La solution trouvée exploite les calculs matriciels de la libraire numpy.
             \end{itemize}
       \item Le main a été développé avant que le module de reconnaissance ne soit terminé.
       Il n’a donc pas pu être testé lors de sa conception.
