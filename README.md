@@ -16,20 +16,19 @@
   * problemes.tex -> __fait__
   * dev_elements.tex -> __fait__
   * dev_main.tex -> __fait__
-  * dev_recoV2.tex
+  * dev_controle.tex -> __fait__
  * Florian :
   * dev_cameraHelper.tex -> __fait__
   * dev_ia.tex -> __fait__
   * dev_recoTester.tex -> __fait__
-  * dev_recoV2.tex
-  * etudeexistant.tex -> __commencé__
+  * dev_recoV2.tex -> __fait__
+  * etudeexistant.tex -> __fait__
  * Enora :
   * introduction.tex -> __fait__
-  * dev_reconnaissance.tex
-  * dev_recoV1.tex
- * Non attribué :
+  * dev_reconnaissance.tex -> __fait__
+  * dev_recoV1.tex -> __fait__
   * dev_action.tex
-  * dev_controle.tex
   * conclusion.tex
-  * conception.tex -> __commencé__
   * presentation.tex
+ * Non attribué :
+  * conception.tex -> __commencé__
