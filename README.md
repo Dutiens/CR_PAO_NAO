@@ -29,6 +29,6 @@
   * dev_recoV1.tex -> __fait__
   * dev_action.tex -> __fait__
   * conclusion.tex
-  * presentation.tex
+  * presentation.tex -> __fait mais très très peu convaincant__
  * Non attribué :
   * conception.tex -> __commencé__
