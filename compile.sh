@@ -24,5 +24,13 @@ if [ ! -f "Images/reco3.jpg" ]; then
   wget http://i.imgur.com/Uit3zA8.jpg -O Images/reco3.jpg
 fi
 
+if [ ! -f "Images/INSA.jpg" ]; then
+  wget http://i.imgur.com/oLQSkIF.jpg -O Images/INSA.jpg
+fi
+
+if [ ! -f "Images/ASI.jpg" ]; then
+  wget http://i.imgur.com/KCbB3SQ.jpg -O Images/ASI.jpg
+fi
+
 pdflatex -output-directory Rapport Rapport/rapport.tex
 pdflatex -output-directory Rapport Rapport/rapport.tex
