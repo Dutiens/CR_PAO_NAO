@@ -23,13 +23,11 @@
   * dev_recoTester.tex -> __fait__
   * dev_recoV2.tex -> __fait__
   * etudeexistant.tex -> __fait__
+  * conception.tex -> __fait__
  * Enora :
   * introduction.tex -> __fait__
   * dev_reconnaissance.tex -> __fait__
   * dev_recoV1.tex -> __fait__
   * dev_action.tex -> __fait__
   * conclusion.tex -> __fait__
-  * presentation.tex -> __fait mais très très peu convaincant__
- * Non attribué :
-  * conception.tex -> __commencé__
-  * module stat performances
+  * presentation.tex -> __fait__
