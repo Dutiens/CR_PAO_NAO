@@ -22,24 +22,53 @@
 }
 
 \begin{document}
-	\makeatletter
-	\begin{titlepage}
-		\begin{center}
-			\centering
+%	\makeatletter
+%	\begin{titlepage}
+%		\begin{center}
+%			\centering
+%
+%      {\large \textsc{INSA Rouen}}\\
+%      \textsc{Département ASI}\\
+%
+%			\vspace{2em}
+%      {\large \textbf{\@date\\
+%       								Rapport de PAO}}\\
+%	    \vspace{6em}
+%	     {\LARGE \textbf{\@title}} \\
+%	    \vfill
+%	      {\large \@author} \\
+%		\end{center}
+%	\end{titlepage}
+%	\makeatother
 
-      {\large \textsc{INSA Rouen}}\\
-      \textsc{Département ASI}\\
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{figure}
+	\includegraphics[width=5cm]{Images/Insa.png}\hfill
+	\includegraphics[width=5cm]{Images/ASI.png}\
+\end{figure}
 
-			\vspace{2em}
-      {\large \textbf{\@date\\
-       								Rapport de PAO}}\\
-	    \vspace{6em}
-	     {\LARGE \textbf{\@title}} \\
-	    \vfill
-	      {\large \@author} \\
-		\end{center}
-	\end{titlepage}
-	\makeatother
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+\center 
+\vspace*{\stretch{1}}\textsc{\huge Institut National des Sciences Appliqu\'{e}es de Rouen}\\[1.5cm] 
+\textsc{\Large Projet d'Approfondissment et d'Ouverture}\\[2cm] 
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Nao joue à Pong}\\[0.2cm] 
+\HRule \\[2.5cm]
+  
+
+
+\large \emph{\textbf{Auteurs :}}\\
+	Enora GICQUEL\\
+	Florian MARTIN\\
+	Thibault THEOLOGIEN \\
+
+~\\ ~\\[1cm]
+
+\vfill{\today}\\[3cm]
+
+\end{titlepage}
 
 	\pagebreak
 	\tableofcontents
