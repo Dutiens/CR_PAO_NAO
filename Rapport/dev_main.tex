@@ -3,19 +3,20 @@
 
   \par Le script main permet l'exécution de l'ensemble du projet.
   Il prend en paramètre une adresse IP sous la forme d'une chaine de caractères, et éventuellement un port.
-  Dans le cas ou le port ne serait pas renseigné, un port par défaut est attribué.
-  Cette adresse IP correspond à celle du Nao sur le réseau local.
+  Dans le cas oùé le port ne serait pas renseigné, un port par défaut est attribué.
+  Cette adresse IP correspond à celle du NAO sur le réseau local.
   \par La première étape consiste donc à initialiser le robot, et lui appliquer sa position de jeu.
-  \par Ensuite, il faut déterminer la vitesse de déplacement en pixels par secondes de la barre contrôlée par le Nao.
-  Pour cela, la capture de deux images, interrompues par une action du bras du Nao d'une durée suffisante (une seconde dans notre cas), puis leur traitement est nécessaire.
-  \par A l'issue de ce traitement, le Nao peut réellement commencer à jouer.
+  \par Ensuite, il faut déterminer la vitesse de déplacement en pixels par secondes de la barre contrôlée par le NAO.
+  Pour cela, la capture de deux images, interrompues par une action du bras du NAO d'une durée suffisante (une seconde dans notre cas), puis leur traitement est nécessaire.
+  \par A l'issue de ce traitement, le NAO peut réellement commencer à jouer.
   Pour cela, les éléments du jeu sont récupérés, par la fonction traitement(nao, reconnaissance) du script courant, et envoyés à une fonction de l'IA.
-  Cette dernière retournera une action (du bras du Nao), qui sera renvoyée au NAO.
+  Cette dernière retournera une action (du bras du NAO), qui sera renvoyée au robot.
 
   \par Deux fonctions sont utilisées dans ce script.
-  La première, getImage(nao, reconnaissance) permet, à partir d'une classe nao et reconnaissance initialisée d'effectuer une capture d'image par le Nao ainsi que de détecter le terrain.
-  Tant que le Nao ne détecte pas le terrain sur la photo, une nouvelle prise est effectuée.
+  La première, getImage(nao, reconnaissance) permet, à partir d'une classe nao et reconnaissance initialisée d'effectuer une capture d'image par le NAO ainsi que de détecter le terrain.
+  Tant que le NAO ne détecte pas le terrain sur la photo, une nouvelle prise est effectuée.
   L'image découpée du terrain, ainsi qu'un objet terrain sont retournés par cette fonction.
   \par La seconde, traitement(nao, reconnaissance) permet, à partir des mêmes objets que la fonction précédente, de récupérer tous les éléments essentiels au jeu (barres, balle et terrain).
   En effet cette fonction appelle getImage(nao, reconnaissance), et à partir des objets retournés, appelle la fonction de la classe reconnaissance permettant la détection des éléments du terrain.
-  Tant que tous les éléments du terrain ne sont pas détectés, toute la procédure énuméré reprend à zéro, sinon les éléments du jeu sont retournés.
+  Tant que tous les éléments du terrain ne sont pas détectés, toute la procédure énumérée reprend à zéro, sinon les éléments du jeu sont retournés.
+\pagebreak

@@ -1,35 +1,44 @@
 \section{Problèmes rencontrés}
 \label{sec:Problèmes rencontrés}
 
-  \par Au cours de ce projet nous nous sommes retrouvé face à un certain nombre de difficultés, dans des domaines assez variés compte tenu de l'évolution du projet.
-  En effet, les problèmes que nous avons pu rencontrer au cours des premières semaines concernaient plus des problèmes matériels,
-  tandis que ceux rencontrés durant les dernières semaines étaient plus de l'ordre de contraintes de développement.
+  \par Au cours de ce projet nous nous sommes retrouvés face à un certain nombre de difficultés, dans des domaines assez variés compte tenu de l'évolution du projet.
+  En effet, les problèmes que nous avons pu rencontrer au cours des premières semaines concernaient plus des problèmes matériels, tandis que ceux rencontrés durant les dernières semaines étaient plus de l'ordre de contraintes de développement.
 
 \subsection{Installation}
-\par Les dépendances du projet ne nous ayant pas été fournies, nous avons dû les récupérer directement depuis internet. Or l'API NaoQI, indispensable pour interagir avec le robot, nécessitait l'obtention d'un statut de développeur au sein de la plateforme \textit{Aldebaran}, statut qui nous a été assez difficile à obtenir.
-\par Nous avons mis un certain temps à nous apercevoir que l'API NaoQI reposait sur une ancienne version du langage Python (2.7). Il nous a donc fallu ré-installer cette version.
-\par L'installation de Python, et surtout de toutes les librairies nécessaires au fonctionnement du projet, sous Windows et sur machine virtuelle Linux s'est révélé être assez fastidieuse. En effet, il semblerait que l'OS du Nao n'ait jamais été mis à jour. Cela impliquait l’utilisation de librairies obsolètes depuis plus d’un an et demi, souvent difficile à obtenir et parfois peu documentées. Nous avons donc par la suite décidé de mettre à jour le Nao ce qui permettra aux groupes qui travailleront dessus par la suite de ne plus avoir ce problème.
+  \par Les dépendances du projet ne nous ayant pas été fournies, nous avons dû les récupérer directement depuis internet.
+  Or l'API NaoQI, indispensable pour interagir avec le robot, nécessitait l'obtention d'un statut de développeur au sein de la plateforme \textit{Aldebaran}, statut qui nous a été assez difficile à obtenir.
+  \par Nous avons mis un certain temps à nous apercevoir que l'API NaoQI reposait sur une ancienne version du langage Python (2.7).
+  Il nous a donc fallu ré-installer cette version.
+  \par L'installation de Python, et surtout de toutes les librairies nécessaires au fonctionnement du projet, sous Windows et sur machine virtuelle Linux s'est révélé être assez fastidieuse.
+  En effet, il semblerait que l'OS du NAO n'ait jamais été mis à jour.
+  Cela impliquait l’utilisation de librairies obsolètes depuis plus d’un an et demi, souvent difficile à obtenir et parfois peu documentées.
+  Nous avons donc par la suite décidé de mettre à jour le NAO ce qui permettra aux groupes qui travailleront dessus par la suite de ne plus avoir ce problème.
 
-\subsection{Nao}
-\par Une fois la mise à jour installée sur le Nao rouge, nous avons eu plusieurs problèmes qui ont mis un certain temps à être corrigés.
-      En effet lors de chaque redémarrage du robot il nous été renseigné que le Nao n’arrivait pas à se connecter aux services web.
-      Bien qu’il fût possible de nous connecter en SSH au Nao (qui était par conséquent connecté au réseau local),
-      il nous était impossible d’accéder à l’interface web, une authentification sur les services web d’\textit{Aldebaran} étant requise à l'issu de la mise à jour.
-      Le problème venait finalement du fait que l’heure et la date du robot s’initialisaient à sa valeur d’usine lors de chaque redémarrage.
-      Une fois le correctif appliqué, nous avons enfin pu accéder à l'interface web du Nao afin de lui appliquer une configuration de base correcte (langue, position à l'issue du démarrage).
-\par Le Nao bleu n’a jamais été mis à jour (sa version est antérieur à celle du Nao rouge avant la mise à jour),
-      et la version du logiciel \textit{Choregraphe} (permettant d’appliquer cette mise à jour) nécessitait une clé que nous ne possédions pas. Nous n'avons donc pas pu le mettre à jour.
-\par Le Nao se remet automatiquement à son heure d’usine lorsqu’il n’a pas été rechargé depuis trop longtemps (on soupçonne les batteries d’être usées).
-\par Le Nao a tendance à chauffer rapidement quand il est en position de jeu, ce qui nous obligeait à devoir attendre pour reprendre les tests sur ce dernier.
-\par Le placement du Nao devant l’écran étant souvent fastidieux (nous nous savions jamais réellement si le robot était en mesure de détecter le terrain), un module affichant la vision du robot en temps réel a été conçu.
+\subsection{NAO}
+  \par Une fois la mise à jour installée sur le NAO rouge, nous avons eu plusieurs problèmes qui ont mis un certain temps à être corrigés.
+  En effet lors de chaque redémarrage du robot il nous été renseigné que le NAO n’arrivait pas à se connecter aux services web.
+  Bien qu’il fût possible de nous connecter en SSH au NAO (qui était par conséquent connecté au réseau local), il nous était impossible d’accéder à l’interface web, une authentification sur les services web d’\textit{Aldebaran} étant requise à l'issu de la mise à jour.
+  Le problème venait finalement du fait que l’heure et la date du robot s’initialisaient à sa valeur d’usine lors de chaque redémarrage.
+  Une fois le correctif appliqué, nous avons enfin pu accéder à l'interface web du NAO afin de lui appliquer une configuration de base correcte (langue, position à l'issue du démarrage).
+  \par Le NAO bleu n’a jamais été mis à jour (sa version est antérieur à celle du NAO rouge avant la mise à jour), et la version du logiciel \textit{Choregraphe} (permettant d’appliquer cette mise à jour) nécessitait une clé que nous ne possédions pas.
+  Nous n'avons donc pas pu le mettre à jour.
+  \par Le NAO se remet automatiquement à son heure d’usine lorsqu’il n’a pas été rechargé depuis trop longtemps (on soupçonne les batteries d’être usées).
+  \par Le NAO a tendance à chauffer rapidement quand il est en position de jeu, ce qui nous obligeait à devoir attendre pour reprendre les tests sur ce dernier.
+  \par Le placement du NAO devant l’écran étant souvent fastidieux (nous nous savions jamais réellement si le robot était en mesure de détecter le terrain), un module affichant la vision du robot en temps réel a été conçu.
 
 \subsection{Développement}
-\par Le code fourni n'était pas fonctionnel: il contenait un certain nombre de bugs que nous avons dû corriger.
-\par Nous éprouvions parfois quelques difficultés à communiquer correctement entre nous, afin de transmettre au mieux nos idées. Certains points de conception du projet ont donc été source de débats animés.
-\par Certaines notions et conventions du langage Python étant inconnues à certains membres de l'équipe, de nombreuses fonctions ont été développé inutilement (accesseurs sur les classes par exemple). Florian a donc pris l’initiative de briefer l’équipe sur ces points.
-\par Après quelques tests sur le Nao, nous nous sommes rendu compte que l’apparence du Pong avait été modifié depuis la capture des images que nous possédions. Cela impactait donc de manière assez conséquente le travail accompli et nous avons du refaire quelques prises.
-\par Des images nous ont été fournies par M. Delestre afin de tester notre détection des éléments du Pong. Il est cependant rapidement apparu que la résolution ainsi que la trop forte saturation en gris des images faussaient la plupart de nos résultats.
-\par Le main a été développé avant que le module de reconnaissance ne soit terminé. Il n’a donc pas pu être testé lors de sa conception. Ce qui nous a fait perdre du temps par la suite.
-\par Nous sommes conscient que l'IA du Nao est loin d'être parfaite, nous avons donc passé un certain temps à identifier d'où pouvait provenir son manque d'efficacité.
+  \par Le code fourni n'était pas fonctionnel: il contenait un certain nombre de bugs que nous avons dû corriger.
+  \par Nous éprouvions parfois quelques difficultés à communiquer correctement entre nous, afin de transmettre au mieux nos idées.
+  Certains points de conception du projet ont donc été source de débats animés.
+  \par Certaines notions et conventions du langage Python étant inconnues à certains membres de l'équipe, de nombreuses fonctions ont été développé inutilement (accesseurs sur les classes par exemple).
+  Florian a donc pris l’initiative de briefer l’équipe sur ces points.
+  \par Après quelques tests sur le NAO, nous nous sommes rendu compte que l’apparence du Pong avait été modifiée depuis la capture des images que nous possédions.
+  Cela impactait donc de manière assez conséquente le travail accompli et nous avons dû refaire quelques prises.
+  \par Des images nous ont été fournies par M. Delestre afin de tester notre détection des éléments du Pong.
+  Il est cependant rapidement apparu que la résolution ainsi que la trop forte saturation en gris des images faussaient la plupart de nos résultats.
+  \par Le main a été développé avant que le module de reconnaissance ne soit terminé.
+  Il n’a donc pas pu être testé lors de sa conception.
+  Ce qui nous a fait perdre du temps par la suite.
+  \par Nous sommes conscient que l'IA du NAO est loin d'être parfaite, nous avons donc passé un certain temps à identifier d'où pouvait provenir son manque d'efficacité.
 
 \pagebreak

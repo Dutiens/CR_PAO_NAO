@@ -14,16 +14,36 @@
 
 \input{commandes.tex}
 
-\title{Compte rendu PAO\\ NAO joue à pong}
+\title{NAO joue à Pong}
 \author{
-	Enora GICQUEL - Florian MARTIN - Thibault THEOLOGIEN\\
-  ASI 3.2 - INSA Rouen
+	Enora GICQUEL\\
+	Florian MARTIN\\
+	Thibault THEOLOGIEN
 }
 
 \begin{document}
-	\maketitle
+	\makeatletter
+	\begin{titlepage}
+		\begin{center}
+			\centering
+
+      {\large \textsc{INSA Rouen}}\\
+      \textsc{Département ASI}\\
+
+			\vspace{2em}
+      {\large \textbf{\@date\\
+       								Rapport de PAO}}\\
+	    \vspace{6em}
+	     {\LARGE \textbf{\@title}} \\
+	    \vfill
+	      {\large \@author} \\
+		\end{center}
+	\end{titlepage}
+	\makeatother
+
+	\pagebreak
 	\tableofcontents
-	\newpage
+	\pagebreak
 
 	\include{introduction}
 	\include{etudeexistant}

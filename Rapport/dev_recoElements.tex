@@ -1,44 +1,42 @@
 \subsubsection{Détection éléments}
 \label{subs:Détection éléments}
-\par La détection des éléments a été une étape délicate. Plusieurs techniques ont donc été testées afin de définir la meilleure en terme de rapidité et de précision.
+  \par La détection des éléments a été une étape délicate.
+  Plusieurs techniques ont donc été testées afin de définir la meilleure en terme de rapidité et de précision.\\
 
-\subsubsubsection{Technique de détection par forme}
-\par Une première idée, un peu simpliste, était de détecter les éléments par leur forme. 
-\par Pour cela on détectait les contours présents dans l'image et on définissait les formes que l'on recherchait : des rectangles plus haut que large pour les barres, et un petit carré pour la balle.
-\par Cette technique était très rapide mais très aléatoire quant à la détection. En effet selon la précision des images  les éléments recherchés ne pouvaient être considérés comme des rectangles.
+  \textbf{Technique de détection par forme}
+    \par Une première idée, un peu simpliste, était de détecter les éléments par leur forme.
+    \par Pour cela on détectait les contours présents dans l'image et on définissait les formes que l'on recherchait : des rectangles plus haut que large pour les barres, et un petit carré pour la balle.
+    \par Cette technique était très rapide mais très aléatoire quant à la détection.
+    En effet selon la précision des images les éléments recherchés ne pouvaient être considérés comme des rectangles.\\
 
-\subsubsubsection{Technique de détection par soustraction de contours}
-\par Une autre idée était de soustraire les contours de deux images consécutives afin de récupérer les éléments ayant bougé entre celles-ci.
-\par Quelques traitements supplémentaires étaient nécessaires pour différencier la balle des barres, mais globalement la détection était bonne et le traitement rapide.
-\par Cette solution nous gênait cependant par certains aspects. Notamment la nécessité d'avoir pris deux images pour pouvoir effectuer le traitement, sachant qu'il faut deux détections pour déterminer le mouvement de la balle, la première réaction aurait été assez lente. Un autre point gênant se posait lorsque le score changeait puisque les contours dans cette zone changeait.
+  \textbf{Technique de détection par soustraction de contours}
+    \par Une autre idée était de soustraire les contours de deux images consécutives afin de récupérer les éléments ayant bougé entre celles-ci.
+    \par Quelques traitements supplémentaires étaient nécessaires pour différencier la balle des barres, mais globalement la détection était bonne et le traitement rapide.
+    \par Cette solution nous gênait cependant par certains aspects.
+    Notamment la nécessité d'avoir pris deux images pour pouvoir effectuer le traitement, sachant qu'il faut deux détections pour déterminer le mouvement de la balle, la première réaction aurait été assez lente.
+    Un autre point gênant se posait lorsque le score changeait puisque les contours dans cette zone changeaient eux aussi.\\
 
-\subsubsubsection{Technique de détection par zone et par aire}
-\par Une autre technique consistait à détecter les éléments selon leur zone et leur aire.
-\par Cette solution part du principe que l'on connait à peu près la position x des barres puisque l'on cherche les éléments dont les contours donnent l'aire la plus grande dans les 2 extrémités du terrain. La détection de la balle se fait par recherche sur tout le terrain de l'élément ayant l'aire la plus petite et dont le point central est de couleur blanche (test de couleur dû à l'affichage du score).
-\par La ligne centrale du terrain posant problème, on a choisi d'ignorer une petite proportion de la partie centrale du terrain.
-\par Cette solution était rapide et la détection des éléments étaient bonnes sauf dans certains cas où ils étaient collés au bord du terrain. Dans le cas de la balle ce n'est pas très handicapant puisque cette configuration apparait beaucoup moins souvent que pour les barres qui posent plus problème.
+  \textbf{Technique de détection par zone et par aire}
+    \par Une autre technique consistait à détecter les éléments selon leur zone et leur aire.
+    \par Cette solution part du principe que l'on connait à peu près la position x des barres puisque l'on cherche les éléments dont les contours donnent l'aire la plus grande dans les 2 extrémités du terrain.
+    La détection de la balle se fait par recherche sur tout le terrain de l'élément ayant l'aire la plus petite et dont le point central est de couleur blanche (test de couleur dû à l'affichage du score).
+    \par La ligne centrale du terrain posant problème, on a choisi d'ignorer une petite proportion de la partie centrale du terrain.
+    \par Cette solution était rapide et la détection des éléments étaient bonnes sauf dans certains cas où ils étaient collés au bord du terrain.
+    Dans le cas de la balle ce n'est pas très handicapant puisque cette configuration apparait beaucoup moins souvent que pour les barres qui posent plus problème.\\
 
-\subsubsubsection{Technique de détection des éléments par moyennes et seuils}
-\par Nous avons également travaillé sur une
-technique consistant à contraster tout
-d'abord le terrain en définissant les pixels de l'image à la couleur noire en
-dessous de la valeur 128, et blanche au dessus. Pour cela, nous exploitons les calculs matriciels de la libraire numpy, car sans, le temps de calcul nécessaire à cette méthode rendait impossible l’application du module de reconnaissance sur le Nao. Ensuite nous parcourons les
-côtés de l'image en essayant de trouver une région de pixels correspondant aux
-éléments (Moyenne de blanc sur les lignes et colonnes de l'image afin de récupérer les
-coordonnées et la taille des éléments). Ainsi nous avons pu observer avec notre
-technique que nous obtenons correctement les coordonnées des barres dans la
-majorité des cas (Nous avons pu observer lors de nos derniers essais quelques
-ratés où l'une des barres n'était pas détectée), mais nous n'obtenions pas de
-résultats satisfaisants concernant la détection de la balle.
+  \textbf{Technique de détection des éléments par moyennes et seuils}
+    \par Nous avons également travaillé sur une technique consistant à contraster tout d'abord le terrain en définissant les pixels de l'image à la couleur noire en dessous de la valeur 128, et blanche au-dessus.
+    Pour cela, nous exploitons les calculs matriciels de la libraire numpy, car sans, le temps de calcul nécessaire à cette méthode (complexité en $O(n^2)$) rendait impossible l’application du module de reconnaissance sur le NAO.
+    Ensuite nous parcourons les côtés de l'image en essayant de trouver une région de pixels correspondant aux éléments (moyenne de blanc sur les lignes et colonnes de l'image afin de récupérer les coordonnées et la taille des éléments).
+    Ainsi nous avons pu observer avec notre technique que nous obtenons correctement les coordonnées des barres dans la majorité des cas (nous avons pu observer lors de nos derniers essais quelques ratés où l'une des barres n'était pas détectée), mais nous n'obtenions pas de résultats satisfaisants concernant la détection de la balle.\\
 
-\subsubsubsection{Choix final}
-\par Finalement la solution retenue est un mélange de la détection par aire pour
-la balle, et de la détection par moyennes et seuils pour les barres.
-\par Ainsi on arrive à une détection assez précise et rapide comme on peut le voir sur la figure 3.
+  \textbf{Choix final}
+    \par Finalement la solution retenue est un mélange de la détection par aire pour la balle, et de la détection par moyennes et seuils pour les barres.
+    \par Ainsi on arrive à une détection assez précise et rapide comme on peut le voir sur la figure \ref{fig:reco3}.
 
-\begin{figure}[h]
-  \caption{Illustration de détection des éléments}
-  \label{fig:illustration du problème IA}
-  \centering
-  \includegraphics[width=12cm]{Images/reco3.jpg}
-\end{figure}
+    \begin{figure}[h]
+      \caption{Illustration de détection des éléments}
+      \label{fig:reco3}
+      \centering
+      \includegraphics[width=10cm]{Images/reco3.jpg}
+    \end{figure}

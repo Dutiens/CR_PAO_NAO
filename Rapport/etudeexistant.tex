@@ -1,40 +1,32 @@
 \section{Etude de l'existant}
 \label{sec:Etude de l'existant}
-\par Nous avons eu comme base le code produit par une équipe auparavant qui avait pour 
-but de produire une version permettant de confirmer la faisabilité du projet. Leur travail 
-s'articulait autour de deux grands points qui sont l'IA et principalement la reconnaissance.
+\par Nous avons eu comme base le code produit par une équipe auparavant, et qui avait pour but de produire une version permettant de confirmer la faisabilité du projet.
+Leur travail s'articulait autour de deux grands points qui sont l'IA et surtout la reconnaissance.
 
     \subsection{Reconnaissance}
-    \par L'équipe précédente a produit différents modules de 
-    reconnaissance. Ainsi ces différentes méthodes allaient de la comparaison d'histogramme, 
-    qui se trouvait être peu fonctionnelle et offrait trop souvent de faux positifs au niveau 
-    de la reconnaissance. Une autre méthode qui a été celle retenue consistait en l'utilisation 
-    de la bibliothèque OpenCV, spécialisée dans le traitement d'images en temps réel, afin de 
-    trouver les contours et formes des images afin de détecter les différents éléments du jeu de Pong.
-    
-    \par Cette méthode retenue offrait la plupart du temps une bonne reconnaissance du terrain,
-    ainsi que des différents éléments du jeu de Pong, mais avait pour défaut majeur un très long 
-    temps de traitement. Ainsi, la contrainte de réaction en temps réel du robot pour pouvoir jouer 
-    correctement ne pouvait pas être respectée, le traitement durant environ 2 à 3 secondes pour réagir.
-    
+    \par L'équipe précédente a produit différents modules de reconnaissance.
+    Ainsi une première méthode était la comparaison d'histogramme, qui se trouvait être peu fonctionnelle et offrait trop souvent de faux positifs au niveau de la reconnaissance.
+    Une autre méthode, qui a été celle retenue, consistait en l'utilisation de la bibliothèque OpenCV, spécialisée dans le traitement d'images en temps réel.
+    Ainsi il était possible de trouver les contours et formes des images afin de détecter les différents éléments du jeu de Pong.
+
+    \par Cette méthode retenue offrait la plupart du temps une bonne reconnaissance du terrain, ainsi que des différents éléments du jeu de Pong, mais avait pour défaut majeur un très long temps de traitement.
+    Ainsi, la contrainte de réaction en temps réel du robot pour pouvoir jouer correctement ne pouvait pas être respectée, le traitement prenant entre 2 et 3 secondes.
+
     \subsection{IA}
-    \par L'IA qui a tout d'abord été implémentée était très basique. En effet cette dernière se contentait 
-    de suivre la balle sur l'axe vertical avec la raquette. De plus la prise en compte du temps pour atteindre 
-    la même hauteur que la balle n'était pas présente, le Nao se contentait donc de se déplacer par accoups afin 
-    d'atteindre la position voulue après plusieurs reconnaissances effectuées.
-    
-    \par Malheureusement, du fait de la lenteur de la reconnaissance, cette solution n'était pas viable 
-    pour faire jouer correctement le robot au Pong. Il arrivait donc assez peu souvent que le Nao arrive à 
-    atteindre la balle à temps.
-    
+    \par L'IA qui a tout d'abord été implémentée était très basique.
+    En effet cette dernière se contentait de suivre la balle sur l'axe vertical avec la raquette.
+    De plus la prise en compte du temps pour atteindre la même hauteur que la balle n'était pas présente.
+    Le NAO se contentait donc de se déplacer par à-coups afin d'atteindre la position voulue, à la suite de plusieurs reconnaissances effectuées.
+
+    \par Malheureusement, du fait de la lenteur de la reconnaissance, cette solution n'était pas viable pour faire jouer correctement le robot au Pong: il était rare que le NAO arrive à atteindre la balle à temps.
+
+    \pagebreak
+
     \subsection{Structure globale du code}
-    \par Le but étant de produire une version permettant de confirmer la faisabilité du projet, 
-    le code produit ne suivait pas une structure modulaire, était difficilement maintenable et 
-    compréhensible dans l'état dans lequel il se trouvait. Ainsi, les différents appels au robot 
-    étaient effectués autant au niveau de l'IA que de la reconnaissance, ce qui rendait le code 
-    très difficilement débuggable du fait de la dispersion des traitements dans les différentes 
-    parties du code.
-    
+    \par Le but était de produire une version permettant de confirmer la faisabilité du projet.
+    Or le code produit ne suivait pas une structure modulaire, était difficilement maintenable et compréhensible dans l'état dans lequel il se trouvait.
+    Ainsi, les différents appels au robot étaient effectués autant au niveau de l'IA que de la reconnaissance, ce qui rendait le code très difficilement débuggable du fait de la dispersion des traitements dans les différentes parties du code.
+
     \par Nous trouvions donc trois fichiers principaux qui étaient les fichiers \textit{Controle}, \textit{IA} et \textit{Reconnaissance}.
 
 \pagebreak
