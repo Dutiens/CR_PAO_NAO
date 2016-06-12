@@ -19,11 +19,10 @@
 \par Cette solution était rapide et la détection des éléments étaient bonnes sauf dans certains cas où ils étaient collés au bord du terrain. Dans le cas de la balle ce n'est pas très handicapant puisque cette configuration apparait beaucoup moins souvent que pour les barres qui posent plus problème.
 
 \subsubsubsection{Technique de détection des éléments par moyennes et seuils}
-\par Une fois le terrain obtenu et recadré nous avons travaillé sur une
-technique permettant de détecter de manière presque sûre les différents éléments
-présents sur le terrain. Ainsi cette technique consiste à contraster tout
+\par Nous avons également travaillé sur une
+technique consistant à contraster tout
 d'abord le terrain en définissant les pixels de l'image à la couleur noire en
-dessous de la valeur 128, et blanche au dessus. Ensuite nous parcourons les
+dessous de la valeur 128, et blanche au dessus. Pour cela, nous exploitons les calculs matriciels de la libraire numpy, car sans, le temps de calcul nécessaire à cette méthode rendait impossible l’application du module de reconnaissance sur le NAO. Ensuite nous parcourons les
 côtés de l'image en essayant de trouver une région de pixels correspondant aux
 éléments (Moyenne de blanc sur les lignes et colonnes de l'image afin de récupérer les
 coordonnées et la taille des éléments). Ainsi nous avons pu observer avec notre
