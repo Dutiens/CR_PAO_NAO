@@ -32,3 +32,4 @@
   * presentation.tex -> __fait mais très très peu convaincant__
  * Non attribué :
   * conception.tex -> __commencé__
+  * module stat performances

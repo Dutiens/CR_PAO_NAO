@@ -1,21 +1,21 @@
 \subsection{Module controle}
 \label{sub:Module controle}
-  \par Ce module est composé de deux classes, la première étant IP et la seconde NAO.
+  \par Ce module est composé de deux classes, la première étant IP et la seconde Nao.
 
-  \par La classe IP est en quelque sorte une classe de description puisqu'elle n'intègre aucun comportement spécifique, et a pour unique vocation de permettre la connexion au NAO d'une manière moins naïve.
+  \par La classe IP est en quelque sorte une classe de description puisqu'elle n'intègre aucun comportement spécifique, et a pour unique vocation de permettre la connexion au Nao d'une manière moins naïve.
   Sa présence se justifie essentiellement d'un point de vu conceptuel.
 
-  \par C'est à partir de la classe NAO que toute les instructions données au NAO (physique) sont executées.
-  Cette classe est initialisée à partir d'une classe IP passée en paramètre, correspondant à celle du NAO sur le réseau local.
-  De part le fait que peu d'actions sur le NAO ne sont requises pour ce projet, on ne retrouve qu'un nombre de fonctions assez limité dans cette classe, chacune correspondant à une action désirée.
-  Les actions du NAO possibles à partir de notre module sont:
+  \par C'est à partir de la classe Nao que toute les instructions données au Nao (physique) sont exécutées.
+  Cette classe est initialisée à partir d'une classe IP passée en paramètre, correspondant à celle du Nao sur le réseau local.
+  De part le fait que peu d'actions sur le Nao ne sont requises pour ce projet, on ne retrouve qu'un nombre de fonctions assez limité dans cette classe, chacune correspondant à une action désirée.
+  Les actions du Nao possibles à partir de notre module sont:
   \begin{itemize}
-    \item appliquer la position initiale (on appelle la fonction correspondante au début du programmme).
-    Le robot est placé dans une position assise, avec le joystique dans la main, et avec la tête un peu inclinée sur le côté afin d'avoir un champ de vision assez large (sinon le bras tenant le joystik est visible).
+    \item appliquer la position initiale (on appelle la fonction correspondante au début du programme).
+    Le robot est placé dans une position assise, avec le joystick dans la main, et avec la tête un peu inclinée sur le côté afin d'avoir un champ de vision assez large (sinon le bras tenant le joystick est visible).
     \item actionner le bras tenant le joystick (toujours le droit dans notre cas) dans une direction choisie, et pour une durée de temps déterminée.
-    C'est par cet intermédiaire que l'on fait \"jouer\" le NAO.
-    \item capturer une image, afin de permettre son traitement par le module de reconnaissance puis son interpretation à partir du module IA.
-    Cette action requiert d'avoir préalablement initialisé la caméra du NAO, et de la couper à la fin du programmme.
-    \item parler, qui permet de faire \"lire\" au NAO une chaine de caractère.
-    Cette fonctionnalité est assez secondaire dans ce projet, cependant elle permet de rentre le resulat final un peu plus attractif/vivant.
+    C'est par cet intermédiaire que l'on fait "jouer" le Nao.
+    \item capturer une image, afin de permettre son traitement par le module de reconnaissance puis son interprétation à partir du module IA.
+    Cette action requiert d'avoir préalablement initialisé la caméra du Nao, et de la couper à la fin du programme.
+    \item parler, qui permet de faire "lire" au Nao une chaine de caractère.
+    Cette fonctionnalité est assez secondaire dans ce projet, cependant elle permet de rentre le résultat final un peu plus attractif/vivant.
   \end{itemize}
